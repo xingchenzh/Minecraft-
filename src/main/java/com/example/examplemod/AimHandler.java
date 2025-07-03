@@ -11,9 +11,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class AimHandler {
     private static final Minecraft mc = Minecraft.getInstance();
-    private static final double RANGE = 20.0; // 瞄准范围
-    private static final double ANGLE_THRESHOLD = 0.05; // 瞄准精度阈值
-    private static final float ROTATION_SPEED = 5.0f; // 旋转速度
+    private static final double RANGE = 30.0; // 瞄准范围
+    private static final double ANGLE_THRESHOLD = 0.02; // 瞄准精度阈值
+    private static final float ROTATION_SPEED = 8.0f; // 旋转速度
 
     @SubscribeEvent
     public void onRenderTick(RenderLevelStageEvent event) {
