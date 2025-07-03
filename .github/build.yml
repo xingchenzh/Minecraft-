@@ -15,7 +15,7 @@ jobs:
           distribution: 'temurin'
           
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build --no-daemon --max-workers=2 -Dorg.gradle.jvmargs="-Xmx3G"
         
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
