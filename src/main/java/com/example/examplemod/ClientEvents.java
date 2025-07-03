@@ -23,3 +23,6 @@ public class ClientEvents {
         return autoAimEnabled && mc.player != null;
     }
 }
+if (event.getKey() == GLFW.GLFW_KEY_G && event.getAction() == GLFW.GLFW_PRESS) {
+    autoAimEnabled = !autoAimEnabled;
+}
